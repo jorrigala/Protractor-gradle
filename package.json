@@ -1,0 +1,11 @@
+{
+  "name": "protractor-gradle",
+  "version": "0.0.0",
+  "description": "Sample project for gulp, gradle and protractor",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-protractor": "4.1.0",
+    "run-sequence": "2.1.0",
+    "gulp-task-listing": "1.0.1"
+  }
+}

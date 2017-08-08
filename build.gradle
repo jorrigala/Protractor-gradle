@@ -1,0 +1,19 @@
+apply plugin: 'maven'
+apply plugin: "com.moowork.gulp"
+
+description = """Protractor-gradle"""
+
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "com.moowork.gradle:gradle-node-plugin:1.2.0"
+  }
+}
+
+task e2e(type: GulpTask, dependsOn: npmInstall) { 
+    args = ["test:e2e"]
+}
